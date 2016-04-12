@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="E5X-Ye-SF5">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zZv-dr-Gj6">
+            <objects>
+                <viewController id="E5X-Ye-SF5" customClass="ViewController" customModule="Adaptive_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rte-dl-MQM"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDe-Qm-sDQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PBB-dv-81q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDS-e0-Ch2">
+                                <rect key="frame" x="217" y="71" width="167" height="126"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="5pQ-J7-jWF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="167" id="OBR-gn-Jhd"/>
+                                    <constraint firstAttribute="width" constant="167" id="UrR-w3-0sg"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="126" id="kSR-eo-rI7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="72"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="328" y="60" width="145.5" height="300"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Two" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIB-ge-s1K">
+                                <rect key="frame" x="217" y="237" width="167" height="126"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="167" id="Rwg-Qt-orC"/>
+                                    <constraint firstAttribute="width" constant="167" id="Xh3-Sn-7tb"/>
+                                    <constraint firstAttribute="height" constant="126" id="jpK-xf-oWq"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="126" id="p7x-bb-Yo1"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="126" id="rUp-Ec-6QN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="267" id="xhT-Ka-JII"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="72"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="328" y="460" width="145.5" height="300"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Three" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cld-L7-Bp8">
+                                <rect key="frame" x="195" y="403" width="211" height="126"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="1Td-oQ-Q7i"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="126" id="3zC-Yh-i6N"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="257" id="LIc-gT-LoZ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="126" id="Wby-Ju-Nu2"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="257" id="Wek-hl-opj"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="211" id="aHU-Iv-LEM"/>
+                                    <constraint firstAttribute="height" constant="126" id="ePb-xE-1az"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="72"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="1Td-oQ-Q7i"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="328" y="460" width="145.5" height="300"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Landscape Mode" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2m-1t-Wg5">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="WDS-e0-Ch2" secondAttribute="centerX" id="5C8-Jb-deo"/>
+                            <constraint firstAttribute="centerX" secondItem="rIB-ge-s1K" secondAttribute="centerX" id="6Sa-fc-sGo"/>
+                            <constraint firstItem="Cld-L7-Bp8" firstAttribute="top" secondItem="rIB-ge-s1K" secondAttribute="bottom" constant="40" id="Dbb-wP-U1U"/>
+                            <constraint firstAttribute="centerX" secondItem="K2m-1t-Wg5" secondAttribute="centerX" id="Gu9-W2-UD7"/>
+                            <constraint firstItem="rIB-ge-s1K" firstAttribute="top" secondItem="WDS-e0-Ch2" secondAttribute="bottom" constant="40" id="J1d-re-is2"/>
+                            <constraint firstAttribute="centerY" secondItem="rIB-ge-s1K" secondAttribute="centerY" id="K3q-Wx-37w"/>
+                            <constraint firstItem="rIB-ge-s1K" firstAttribute="leading" secondItem="WDS-e0-Ch2" secondAttribute="trailing" constant="20" id="R9p-L1-RPT"/>
+                            <constraint firstItem="K2m-1t-Wg5" firstAttribute="top" secondItem="rte-dl-MQM" secondAttribute="bottom" constant="36" id="T3L-IV-FKG"/>
+                            <constraint firstAttribute="centerY" secondItem="WDS-e0-Ch2" secondAttribute="centerY" id="UAl-5U-69L"/>
+                            <constraint firstItem="Cld-L7-Bp8" firstAttribute="leading" secondItem="rIB-ge-s1K" secondAttribute="trailing" constant="20" id="VpS-iA-Iig"/>
+                            <constraint firstAttribute="centerY" secondItem="Cld-L7-Bp8" secondAttribute="centerY" id="uCI-ja-sAN"/>
+                            <constraint firstAttribute="centerX" secondItem="Cld-L7-Bp8" secondAttribute="centerX" id="wNz-VW-dx5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="K2m-1t-Wg5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Gu9-W2-UD7"/>
+                                <exclude reference="UAl-5U-69L"/>
+                                <exclude reference="R9p-L1-RPT"/>
+                                <exclude reference="VpS-iA-Iig"/>
+                                <exclude reference="uCI-ja-sAN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="K2m-1t-Wg5"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Gu9-W2-UD7"/>
+                                <exclude reference="5C8-Jb-deo"/>
+                                <include reference="UAl-5U-69L"/>
+                                <exclude reference="J1d-re-is2"/>
+                                <include reference="R9p-L1-RPT"/>
+                                <exclude reference="Dbb-wP-U1U"/>
+                                <include reference="VpS-iA-Iig"/>
+                                <include reference="uCI-ja-sAN"/>
+                                <exclude reference="wNz-VW-dx5"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNr-Fr-wHK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="684"/>
+        </scene>
+    </scenes>
+</document>

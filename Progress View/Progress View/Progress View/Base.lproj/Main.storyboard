@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Progress_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lhx-mk-8d3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zBh-h1-TC9">
+                                <rect key="frame" x="37" y="20" width="34" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bDE-Gv-hen"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HnI-bm-Om5">
+                                <rect key="frame" x="43" y="58" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LTs-UV-Gp2">
+                                <rect key="frame" x="126" y="67" width="454" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100% " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-YC-CMQ">
+                                <rect key="frame" x="277" y="20" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LTs-UV-Gp2" firstAttribute="trailing" secondItem="lhx-mk-8d3" secondAttribute="trailingMargin" id="2Wu-i3-oi4"/>
+                            <constraint firstItem="s0u-YC-CMQ" firstAttribute="top" secondItem="zBh-h1-TC9" secondAttribute="top" id="6g1-qD-enQ"/>
+                            <constraint firstItem="zBh-h1-TC9" firstAttribute="leading" secondItem="lhx-mk-8d3" secondAttribute="leadingMargin" constant="17" id="MbJ-z3-5sV"/>
+                            <constraint firstItem="HnI-bm-Om5" firstAttribute="centerY" secondItem="LTs-UV-Gp2" secondAttribute="centerY" id="REE-9O-wMP"/>
+                            <constraint firstItem="LTs-UV-Gp2" firstAttribute="top" secondItem="s0u-YC-CMQ" secondAttribute="bottom" constant="26" id="TJz-vP-mUs"/>
+                            <constraint firstItem="s0u-YC-CMQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Y3v-D0-HwO"/>
+                            <constraint firstItem="LTs-UV-Gp2" firstAttribute="leading" secondItem="lhx-mk-8d3" secondAttribute="leadingMargin" constant="106" id="cqi-6D-XLe"/>
+                            <constraint firstItem="HnI-bm-Om5" firstAttribute="leading" secondItem="lhx-mk-8d3" secondAttribute="leadingMargin" constant="23" id="kve-Xg-d2K"/>
+                            <constraint firstAttribute="centerX" secondItem="s0u-YC-CMQ" secondAttribute="centerX" id="odI-aC-sQz"/>
+                            <constraint firstItem="HnI-bm-Om5" firstAttribute="top" secondItem="zBh-h1-TC9" secondAttribute="bottom" constant="8" id="w84-1U-hXv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="indicator" destination="HnI-bm-Om5" id="9Xc-in-xrt"/>
+                        <outlet property="label" destination="s0u-YC-CMQ" id="j7Q-K0-s3M"/>
+                        <outlet property="progress" destination="LTs-UV-Gp2" id="tla-H6-rW2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="426"/>
+        </scene>
+    </scenes>
+</document>
